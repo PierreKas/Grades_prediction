@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>WELCOME TO THE GRADING PAGE</h1>
+    <h3>Fill this form please</h3>
+    <form action="{% url 'results' %}">
+        {% csrf_token %}
+       <label for="">QUIZZES AND ASSINGMENTS/15</label> <br>
+       <input type="text" name="QUIZZES" placeholder="TOTAL MARKS FOR QUIZZES AND ASSINGMENTS"><br><br>
+       <label for="">PROJECT /15</label> <br>
+       <input type="text" name="PROJECT" placeholder="MARKS FOR THE PROJECT"><br><br>
+       <label for="">MID-EXAM /30</label> <br>
+       <input type="text" name="MID-EXAM" placeholder="MARKS OF MID-EXAM"><br><br>
+       <label for="">MID-EXAM /40</label> <br>
+       <input type="text" name="FINAL-EXAM" placeholder="MARKS OF FINAL-EXAM"><br><br>
+       <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

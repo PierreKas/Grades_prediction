@@ -1,0 +1,5 @@
+django-admin startproject <project name>
+django-admin startproject <project name> .--->(1)
+django-admin runserver
+python manage.py runserver--->(2)
+python manage.py startapp--->(3)
